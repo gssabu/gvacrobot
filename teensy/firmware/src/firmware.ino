@@ -76,7 +76,7 @@ void setup()
     steering_servo.write(90); 
     
     nh.initNode();
-    nh.getHardware()->setBaud(57600);
+    nh.getHardware()->setBaud(115200);
     nh.subscribe(pid_sub);
     nh.subscribe(cmd_sub);
     nh.advertise(raw_vel_pub);
